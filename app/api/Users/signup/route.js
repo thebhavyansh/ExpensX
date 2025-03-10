@@ -39,6 +39,7 @@ export async function POST(request) {
     // Example: await sendVerificationEmail(user.email);
 
     // Respond with the created user data (excluding the password for security reasons)
+    
     return NextResponse.json({ user: { id: user.id, name: user.name, email: user.email } }, { status: 201 });
   } catch (error) {
     // Handle errors and respond with a 500 status code
